@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+.file-name {
+  font-style: italic;
+  font-weight: 600;
+  color: rgb(45, 45, 255);
+}
+
+form {
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+form code {
+  width: 100%;
+  margin: 0;
+  padding: 10px 20px;
+  background-color: #f2f2f2;
+  border-radius: 6px;
+}
+
+form input {
+  display: inline;
+  width: 80%;
+  margin: 0 10px;
+}
+
+form button {
+  margin-left: 10px;
+}
+
+.result-img {
+  margin-top: 10px;
+  max-width: 500px;
+  max-height: 300px;
+}
