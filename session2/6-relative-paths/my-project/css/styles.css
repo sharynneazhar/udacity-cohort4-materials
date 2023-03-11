@@ -6,6 +6,17 @@ body {
   padding: 20px;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 300px);
+  justify-content: flex-start;
+  gap: 50px;
+}
+
+.container {
+  max-width: 100%;
+}
+
 section {
   margin-bottom: 50px;
 }

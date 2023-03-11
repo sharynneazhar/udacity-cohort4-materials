@@ -11,93 +11,107 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="../../../libs/treejs/tree.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
-    <main class="container">
-      <h3>Absolute Paths</h3>
-      <hr />
+    <h3>Absolute Paths</h3>
+    <hr />
+    <div class="grid">
+      <main class="container">
+        <section id="rp-same-folder">
+          <h4>
+            Referencing a file that lives in the same directory as the current
+            working file
+          </h4>
+          <p>
+            From index.html, enter the correct path to the image:
+            <span class="file-name">huskies.jpeg</span>
+          </p>
+          <form id="same-folder">
+            <code
+              >&lt;img src="<input
+                type="text"
+                id="same-folder-input"
+                autocomplete="off"
+              />"/&gt;</code
+            >
+            <button type="submit" class="btn btn-outline-primary">
+              Submit
+            </button>
+          </form>
+        </section>
 
-      <section id="rp-same-folder">
-        <h4>
-          Referencing a file that lives in the same directory as the current
-          working file
-        </h4>
-        <p>
-          From index.html, enter the correct path to the image:
-          <span class="file-name">huskies.jpeg</span>
-        </p>
-        <form id="same-folder">
-          <code
-            >&lt;img src="<input
-              type="text"
-              id="same-folder-input"
-              autocomplete="off"
-            />"/&gt;</code
-          >
-          <button type="submit" class="btn btn-outline-primary">Submit</button>
-        </form>
-      </section>
+        <section id="rp-inside-folder">
+          <h4>
+            Referencing a file inside a folder that is in the same directory as
+            the current folder
+          </h4>
+          <p>
+            From index.html, enter the correct path to the image:
+            <span class="file-name">eskimo.jpeg</span>
+          </p>
+          <form id="inside-folder">
+            <code
+              >&lt;img src="<input
+                type="text"
+                id="inside-folder-input"
+                autocomplete="off"
+              />"/&gt;</code
+            >
+            <button type="submit" class="btn btn-outline-primary">
+              Submit
+            </button>
+          </form>
+        </section>
 
-      <section id="rp-inside-folder">
-        <h4>
-          Referencing a file inside a folder that is in the same directory as
-          the current folder
-        </h4>
-        <p>
-          From index.html, enter the correct path to the image:
-          <span class="file-name">eskimo.jpeg</span>
-        </p>
-        <form id="inside-folder">
-          <code
-            >&lt;img src="<input
-              type="text"
-              id="inside-folder-input"
-              autocomplete="off"
-            />"/&gt;</code
-          >
-          <button type="submit" class="btn btn-outline-primary">Submit</button>
-        </form>
-      </section>
+        <section id="rp-one-level-up">
+          <h4>Referencing a file that lives in the parent folder</h4>
+          <p>
+            From index.html, enter the correct path to the image:
+            <span class="file-name">yawning-pup.jpeg</span>
+          </p>
+          <form id="one-level-up">
+            <code
+              >&lt;img src="<input
+                type="text"
+                id="one-level-up-input"
+                autocomplete="off"
+              />"/&gt;</code
+            >
+            <button type="submit" class="btn btn-outline-primary">
+              Submit
+            </button>
+          </form>
+        </section>
 
-      <section id="rp-one-level-up">
-        <h4>Referencing a file that lives in the parent folder</h4>
-        <p>
-          From index.html, enter the correct path to the image:
-          <span class="file-name">yawning-pup.jpeg</span>
-        </p>
-        <form id="one-level-up">
-          <code
-            >&lt;img src="<input
-              type="text"
-              id="one-level-up-input"
-              autocomplete="off"
-            />"/&gt;</code
-          >
-          <button type="submit" class="btn btn-outline-primary">Submit</button>
-        </form>
-      </section>
-
-      <section id="nested">
-        <h4>Referencing a file that lives somewhere else in the file tree</h4>
-        <p>
-          From app.js, enter the correct path to the image:
-          <span class="file-name">costume-pup.jpeg</span>
-        </p>
-        <form id="nested">
-          <code
-            >&lt;img src="<input
-              type="text"
-              id="nested-input"
-              autocomplete="off"
-            />"/&gt;</code
-          >
-          <button type="submit" class="btn btn-outline-primary">Submit</button>
-        </form>
-      </section>
-    </main>
-
+        <section id="nested">
+          <h4>Referencing a file that lives somewhere else in the file tree</h4>
+          <p>
+            From app.js, enter the correct path to the image:
+            <span class="file-name">costume-pup.jpeg</span>
+          </p>
+          <form id="nested">
+            <code
+              >&lt;img src="<input
+                type="text"
+                id="nested-input"
+                autocomplete="off"
+              />"/&gt;</code
+            >
+            <button type="submit" class="btn btn-outline-primary">
+              Submit
+            </button>
+          </form>
+        </section>
+      </main>
+      <div>
+        <h4>File Tree</h4>
+        <div id="tree"></div>
+      </div>
+    </div>
+    <script src="../../../libs/treejs/tree.js"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>

@@ -1,3 +1,88 @@
+var tree = new Tree(document.getElementById('tree'), {
+  navigate: true, // allow navigate with ArrowUp and ArrowDown
+});
+
+var structure = [
+  {
+    name: 'folderA',
+    type: Tree.FOLDER,
+    children: [
+      {
+        name: 'folderB',
+        type: Tree.FOLDER,
+        children: [
+          {
+            name: 'folderC',
+            type: Tree.FOLDER,
+            children: [
+              {
+                name: 'costume-pup.jpeg',
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: 'images',
+    type: Tree.FOLDER,
+    children: [
+      {
+        name: 'yawning-pup.jpeg',
+      },
+    ],
+  },
+  {
+    name: 'my-project',
+    open: true,
+    type: Tree.FOLDER,
+    selected: true,
+    children: [
+      {
+        name: 'css',
+        type: Tree.FOLDER,
+        children: [
+          {
+            name: 'styles.css',
+          },
+        ],
+      },
+      {
+        name: 'images',
+        type: Tree.FOLDER,
+        children: [
+          {
+            name: 'eskimo.jpeg',
+          },
+        ],
+      },
+      {
+        name: 'js',
+        type: Tree.FOLDER,
+        children: [
+          {
+            name: 'app.js',
+          },
+        ],
+      },
+      {
+        name: 'huskies.jpeg',
+      },
+      {
+        name: 'index.html',
+      },
+    ],
+  },
+];
+
+// keep track of the original node objects
+tree.on('created', (e, node) => {
+  e.node = node;
+});
+
+tree.json(structure);
+
 const handleInput = (event, inputId) => {
   event.preventDefault();
 
