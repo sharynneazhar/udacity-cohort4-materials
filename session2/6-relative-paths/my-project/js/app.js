@@ -44,7 +44,7 @@ nestedForm.addEventListener('submit', (event) => {
 
   if (inputValue === '../../folderA/folderB/folderC/costume-pup.jpeg') {
     image.src =
-      '/session2/6-relative-paths/folderA/folderB/folderC/costume-pup.jpeg';
+      '/udacity-cohort4-materials/session2/6-relative-paths/folderA/folderB/folderC/costume-pup.jpeg';
   } else {
     image.src = 'wrongpath';
   }
