@@ -1,2 +1,3 @@
-# udacity-cohort4-materials
+# Udacity Cohort 4 Materials
+
 Materials for Udacity Cohort 4
