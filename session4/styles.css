@@ -1,0 +1,15 @@
+h1 {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid red;
+}
+
+img {
+  width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.text-group {
+  border: 2px solid green;
+}
