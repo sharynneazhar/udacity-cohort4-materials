@@ -1,0 +1,35 @@
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-bottom: 30px;
+  padding: 20px 40px;
+  border-radius: 8px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #262626;
+}
+
+.nav-links li:hover {
+  background-color: #fec783;
+}
+
+@media screen and (max-width: 425px) {
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-links li {
+    margin-bottom: 0;
+    padding: 10px;
+  }
+}
