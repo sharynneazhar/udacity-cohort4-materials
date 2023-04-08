@@ -1,3 +1,3 @@
 # Udacity Cohort 4 Materials
 
-Materials for Udacity Cohort 4
+Repository of all code examples and exercises covered during the recorded sessions. 
