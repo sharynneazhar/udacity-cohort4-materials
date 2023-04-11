@@ -1,14 +1,15 @@
 // ## Data Types
-// For each expression, predict what you think the output will be in a comment (`//`) ***without first running the command***. Then run the expression in the console. Note the actual output in a comment and compare it with your prediction.
+
+// For each expression, predict what you think the output will be in a
+// comment (`//`) ***without first running the command***. Then run the
+// expression in the console. Note the actual output in a comment and
+// compare it with your prediction.
+
 // You may run these commands inside the Dev Tool console to double check your answer!
 
-// #### Example
-
 typeof '15';
-// Prediction: Number
-// Actual: String
-
-// What is the output of each of the expressions below?
+// Prediction:
+// Actual:
 
 typeof 15;
 // Prediction:
